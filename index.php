@@ -1,12 +1,12 @@
 <?php
 
     require_once('vendor/autoload.php');
-    $sender = "sixtrone@gmail.com";
+    $sender = "contact@dev-sixtrone.com";
     $to = array('nancy.test1@mmcp.groupe-efrei.fr','test2.toto@mmcp.groupe-efrei.fr');
     // Create the Transport
-    $transport = (new Swift_SmtpTransport('smtp.gmail.com',465,'ssl'))
+    $transport = (new Swift_SmtpTransport('SSL0.OVH.NET',587,'tls'))
         ->setUsername($sender)
-        ->setPassword('gf4mP321@gv5');
+        ->setPassword('rc9uf7SNb453RVU4');
 // Create the Mailer using your created Transport
     $mailer = new Swift_Mailer($transport);
 // Create a message
