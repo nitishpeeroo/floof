@@ -14,6 +14,6 @@
         ->setFrom([$sender])
         ->setTo($to)
         ->setBody('Here is the message itself')
-         ->attach(Swift_Attachment::fromPath('moi.jpg'));
+         ->attach(Swift_Attachment::fromPath('/home/floof/moi.jpg'));
 // Send the message
  $mailer->send($message);
