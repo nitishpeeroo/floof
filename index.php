@@ -12,9 +12,8 @@
 // Create a message
     $message = (new Swift_Message('Wonderful Subject'))
         ->setFrom([$sender])
-        ->setTo(['nitish@sixtrone.com'])
+        ->setTo($to)
         ->setBody('Here is the message itself')
          ->attach(Swift_Attachment::fromPath('moi.jpg'));
 // Send the message
-    $result = $mailer->send($message);
-    print_r($result);
+ $mailer->send($message);
