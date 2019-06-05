@@ -2,7 +2,7 @@
 
     require_once('vendor/autoload.php');
     $sender = "contact@dev-sixtrone.com";
-    $to = array('nancy.test1@mmcp.groupe-efrei.fr','test2.toto@mmcp.groupe-efrei.fr');
+    $to = array('nitish.peeroo@gmail.com','nancy.test1@mmcp.groupe-efrei.fr','test2.toto@mmcp.groupe-efrei.fr');
     // Create the Transport
     $transport = (new Swift_SmtpTransport('SSL0.OVH.NET',587,'tls'))
         ->setUsername($sender)
